@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import { 
   Cloud, 
-  Beer, 
-  Boxes, 
-  ShieldCheck, 
-  BrainCircuit,
+  Code2, 
+  BrainCircuit, 
+  Smartphone, 
+  Sparkles, 
+  Layers,
   CheckCircle2, 
   ChevronRight, 
-  Sparkles,
   ArrowRight
 } from 'lucide-react';
 import { servicesData } from '../../data/harvidData';
 
 const iconMap = {
-  Cloud: Cloud,
+  Code2: Code2,
   BrainCircuit: BrainCircuit,
-  Beer: Beer,
-  Boxes: Boxes,
-  ShieldCheck: ShieldCheck
+  Smartphone: Smartphone,
+  Sparkles: Sparkles,
+  Cloud: Cloud,
+  Layers: Layers
 };
 
 export default function Services({ onOpenQuoteModal }) {
@@ -29,15 +30,15 @@ export default function Services({ onOpenQuoteModal }) {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 sm:mb-16">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-600 dark:text-sky-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Capabilities & Engineering</span>
+            <span>Core Business Capabilities</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-            Tailored Enterprise Software & Cloud Solutions
+            Engineering High-Performance Business Software
           </h2>
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            From custom cloud SaaS web platforms and AI analytics engines to specialized industry operating software, HARVID delivers systems built for speed and security.
+            From custom web and mobile applications to AI business automation and cloud deployments, we build software designed to accelerate your growth.
           </p>
         </div>
 
@@ -47,7 +48,7 @@ export default function Services({ onOpenQuoteModal }) {
           {/* Services Selector List */}
           <div className="lg:col-span-5 space-y-3 sm:space-y-4">
             {servicesData.map((service) => {
-              const IconComponent = iconMap[service.icon] || Cloud;
+              const IconComponent = iconMap[service.icon] || Code2;
               const isSelected = selectedService.id === service.id;
               
               return (
@@ -56,14 +57,14 @@ export default function Services({ onOpenQuoteModal }) {
                   onClick={() => setSelectedService(service)}
                   className={`p-4 sm:p-6 rounded-2xl sm:rounded-[24px] cursor-pointer transition-all duration-300 border ${
                     isSelected
-                      ? 'bg-white dark:bg-slate-900 border-sky-500 shadow-xl scale-[1.01]'
+                      ? 'bg-white dark:bg-slate-900 border-red-500 shadow-xl scale-[1.01]'
                       : 'bg-white/60 dark:bg-slate-900/60 border-slate-200/80 dark:border-slate-800 hover:bg-white dark:hover:bg-slate-900 hover:shadow-md'
                   }`}
                 >
                   <div className="flex items-start space-x-3 sm:space-x-4">
                     <div className={`p-2.5 sm:p-3 rounded-2xl shrink-0 ${
                       isSelected 
-                        ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-950 shadow-md' 
+                        ? 'bg-red-600 text-white shadow-md' 
                         : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
                     }`}>
                       <IconComponent className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -73,7 +74,7 @@ export default function Services({ onOpenQuoteModal }) {
                         <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
                           {service.title}
                         </h3>
-                        <ChevronRight className={`w-4 h-4 transition-transform shrink-0 ${isSelected ? 'rotate-90 text-sky-500' : 'text-slate-400'}`} />
+                        <ChevronRight className={`w-4 h-4 transition-transform shrink-0 ${isSelected ? 'rotate-90 text-red-500' : 'text-slate-400'}`} />
                       </div>
                       <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                         {service.shortDesc}
@@ -88,12 +89,12 @@ export default function Services({ onOpenQuoteModal }) {
           {/* Detailed View Panel */}
           <div className="lg:col-span-7 bg-white dark:bg-slate-900 p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-[32px] border border-slate-200/80 dark:border-slate-800 shadow-xl space-y-6">
             <div className="flex items-center space-x-4 pb-6 border-b border-slate-200 dark:border-slate-800">
-              {React.createElement(iconMap[selectedService.icon] || Cloud, {
-                className: "w-7 h-7 sm:w-8 sm:h-8 text-sky-500 dark:text-sky-400 shrink-0"
+              {React.createElement(iconMap[selectedService.icon] || Code2, {
+                className: "w-7 h-7 sm:w-8 sm:h-8 text-red-600 dark:text-red-500 shrink-0"
               })}
               <div>
-                <span className="text-xs font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-widest">
-                  Solution Deep-Dive
+                <span className="text-xs font-semibold text-red-600 dark:text-red-400 uppercase tracking-widest">
+                  Capability Architecture
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
                   {selectedService.title}
@@ -139,9 +140,9 @@ export default function Services({ onOpenQuoteModal }) {
             <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex justify-end">
               <button
                 onClick={onOpenQuoteModal}
-                className="w-full sm:w-auto px-6 py-3.5 rounded-full text-sm font-bold text-white bg-slate-900 dark:bg-white dark:text-slate-950 hover:bg-slate-800 dark:hover:bg-slate-100 transition-all flex items-center justify-center space-x-2 shadow-lg"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-full text-sm font-bold text-white bg-red-600 hover:bg-red-700 transition-all flex items-center justify-center space-x-2 shadow-lg shadow-red-500/20"
               >
-                <span>Request Technical Review</span>
+                <span>Build Your Solution</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

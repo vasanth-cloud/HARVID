@@ -15,9 +15,9 @@ export default function Navbar({ activeSection, setActiveSection, onOpenQuoteMod
   const { theme, toggleTheme } = useTheme();
 
   const navLinks = [
-    { id: 'services', label: 'Solutions' },
-    { id: 'products', label: 'Software Suite' },
-    { id: 'about', label: 'About Us' },
+    { id: 'services', label: 'Capabilities' },
+    { id: 'products', label: 'Real Systems & Case Studies' },
+    { id: 'about', label: 'Founders' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -96,7 +96,7 @@ export default function Navbar({ activeSection, setActiveSection, onOpenQuoteMod
               onClick={onOpenQuoteModal}
               className="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-red-600 hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-500 hover:scale-105 transition-all duration-200 shadow-md flex items-center space-x-2"
             >
-              <span>Get Consultation</span>
+              <span>Build Your Solution</span>
               <ChevronRight className="w-4 h-4 opacity-80" />
             </button>
           </div>

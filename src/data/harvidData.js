@@ -1,11 +1,12 @@
 export const companyDetails = {
   name: "HARVID",
   fullName: "HARVID Tech & Software Solutions",
-  logo: "/harvid-logo.png",
-  tagline: "Engineering Intelligent Enterprise Software & Multi-Industry Solutions",
-  description: "HARVID is an enterprise software engineering company delivering custom cloud SaaS applications, AI analytics platforms, systems integration, and specialized software products.",
+  logo: "/harvid-emblem-clean.png",
+  positioning: "HARVID — Building AI-Powered Software Solutions for Modern Businesses.",
+  tagline: "Building AI-Powered Software Solutions for Modern Businesses",
+  description: "HARVID turns complex business challenges into fast, intelligent software. From custom SaaS web apps and AI automation to specialized systems like Bar OS and Jewellery ERP, we build software engineered for speed and revenue growth.",
   establishedYear: 2026,
-  status: "Incorporation Pending • Active Software Studio",
+  status: "Active Software Studio",
   contact: {
     email: "harvidtech@gmail.com",
     phone: "6381901759",
@@ -14,148 +15,190 @@ export const companyDetails = {
     address: "HARVID Tech Studio",
   },
   stats: [
-    { label: "Core Solution Domains", value: "5 Domains", detail: "Multi-Industry Tech" },
-    { label: "Platform SLA Uptime", value: "99.99%", detail: "Enterprise Grade" },
-    { label: "API Response Speed", value: "< 20ms", detail: "High Concurrency" },
-    { label: "Database Security", value: "Zero-Trust", detail: "PostgreSQL & Encrypted" },
+    { label: "Completed Systems", value: "10+ Systems", detail: "Active Production Builds" },
+    { label: "Platform SLA Uptime", value: "99.99%", detail: "Enterprise Grade Cloud" },
+    { label: "API Response Speed", value: "< 20ms", detail: "High-Concurrency FastAPI" },
+    { label: "Industries Served", value: "Multi-Industry", detail: "Hospitality, Retail, SaaS" },
+  ],
+  techStack: [
+    "React", "Python", "FastAPI", "Node.js", "PostgreSQL", "PyTorch / AI", "Docker", "Tailwind CSS"
   ]
 };
 
 export const teamData = [
   {
     name: "A. Vasanth",
-    role: "Co-Founder & Lead Software Developer",
-    bio: "Lead software developer and architect driving HARVID's technology stack, cloud backend systems, and custom software platforms.",
+    role: "Founder",
+    focus: "Software Engineering & Architecture",
+    bio: "Software developer and systems architect driving HARVID's technology stack, cloud backends, and custom software platforms.",
     avatar: "/vasanth.jpg"
   },
   {
     name: "T. S. Padmesh",
-    role: "Co-Founder & Chief Marketing Officer",
-    bio: "Head of marketing, business development, and client relations driving HARVID's brand growth and enterprise outreach.",
+    role: "Founder",
+    focus: "Marketing & Growth Strategy",
+    bio: "Head of marketing, business development, and client relations driving HARVID's market presence and enterprise outreach.",
     avatar: "/padmesh.jpg"
   }
 ];
 
 export const servicesData = [
   {
-    id: "cloud-saas",
-    title: "Custom Cloud & SaaS Web Platforms",
-    icon: "Cloud",
-    shortDesc: "Scalable, high-performance web applications and multi-tenant SaaS platforms built for modern businesses.",
-    fullDesc: "We design and engineer bespoke web software platforms leveraging React, FastAPI, Node.js, and cloud microservices tailored to your exact business requirements.",
+    id: "custom-software",
+    title: "Custom Software Development",
+    icon: "Code2",
+    shortDesc: "Bespoke full-stack web and desktop applications engineered specifically for your unique business workflows.",
+    fullDesc: "We build custom software solutions ground-up using modern frameworks like React and FastAPI. No rigid off-the-shelf templates—every module is tailored to automate your operations.",
     features: [
-      "Custom Full-Stack Web & Mobile App Development",
-      "Multi-Tenant SaaS Architecture & Microservices",
-      "Real-time Dashboards & Interactive Analytics",
-      "Automated CI/CD Deployment & Cloud Scaling"
+      "Custom Full-Stack Web & Business Software",
+      "Tailored Operations & Administration Dashboards",
+      "High-Speed RESTful API & Database Architecture",
+      "Automated Workflow & Data Pipeline Development"
     ],
-    techStack: ["React", "Vite", "FastAPI", "Node.js", "PostgreSQL", "Tailwind CSS"]
+    techStack: ["React", "FastAPI", "Python", "PostgreSQL", "Tailwind CSS"]
   },
   {
-    id: "ai-analytics",
-    title: "AI & Business Intelligence Engines",
+    id: "ai-ml-solutions",
+    title: "AI & ML Solutions",
     icon: "BrainCircuit",
-    shortDesc: "Transform raw business data into actionable predictive insights with custom AI models and BI dashboards.",
-    fullDesc: "Harness artificial intelligence, machine learning data pipelines, and automated analytics to drive smarter revenue forecasting and operational efficiency.",
+    shortDesc: "Transform raw company data into intelligent predictive insights, automated classification, and AI assistants.",
+    fullDesc: "Harness artificial intelligence, machine learning data pipelines, and custom AI models to automate decision-making, predictive forecasting, and intelligent data routing.",
     features: [
-      "Predictive Revenue & Demand Forecasting",
-      "Custom Machine Learning Pipeline Integration",
-      "Automated Report Generation & Data Telemetry",
-      "Interactive Real-Time BI Analytics Dashboards"
+      "Predictive Analytics & Revenue Forecasting",
+      "Automated AI Document & Image Processing",
+      "Custom Machine Learning Pipeline Development",
+      "LLM & Intelligent Inquiry Automation"
     ],
-    techStack: ["Python", "PyTorch", "FastAPI", "Pandas", "Recharts", "React"]
+    techStack: ["Python", "PyTorch", "FastAPI", "OpenCV", "Pandas"]
   },
+  {
+    id: "web-mobile-apps",
+    title: "Web & Mobile Applications",
+    icon: "Smartphone",
+    shortDesc: "Fast, responsive web portals and mobile app solutions designed for seamless user experience.",
+    fullDesc: "Delivering cross-platform mobile and web applications with sub-second page loads, offline synchronization, and intuitive UI/UX built to Apple and Swiggy standards.",
+    features: [
+      "Responsive React Web & Customer Portals",
+      "Cross-Platform iOS & Android App Development",
+      "Real-Time Data Sync & Push Notifications",
+      "Sub-20ms Page Load & API Execution"
+    ],
+    techStack: ["React", "React Native", "FastAPI", "PostgreSQL", "Tailwind"]
+  },
+  {
+    id: "business-automation",
+    title: "Business Automation",
+    icon: "Sparkles",
+    shortDesc: "Eliminate repetitive manual tasks, billing bottlenecks, and data entry errors with automated workflows.",
+    fullDesc: "Automate core business functions from inventory tracking and peg/gram calculations to automated invoice generation and customer notification triggers.",
+    features: [
+      "Automated Invoicing & GST Billing Engines",
+      "Inventory Telemetry & Real-Time Stock Sync",
+      "Automated Customer Notification Triggers",
+      "Staff Attendance & Payroll Reconciliation"
+    ],
+    techStack: ["Python", "FastAPI", "Node.js", "Redis", "PostgreSQL"]
+  },
+  {
+    id: "cloud-deployment",
+    title: "Cloud & Deployment",
+    icon: "Cloud",
+    shortDesc: "Scalable cloud infrastructure hosting, Docker containerization, and zero-downtime CI/CD deployments.",
+    fullDesc: "Deploy your software on high-availability cloud infrastructure with automated database backups, microservices containerization, and enterprise SSL/TLS security.",
+    features: [
+      "Docker Containerization & Cloud Deployment",
+      "Automated CI/CD Release Pipelines",
+      "PostgreSQL Database Clustering & Alembic Migrations",
+      "99.99% SLA Uptime & Server Monitoring"
+    ],
+    techStack: ["Docker", "Render", "PostgreSQL", "FastAPI", "Alembic"]
+  },
+  {
+    id: "enterprise-solutions",
+    title: "Enterprise Solutions & API Integration",
+    icon: "Layers",
+    shortDesc: "Unify fragmented ERP, CRM, billing, and payment systems into a synchronized software ecosystem.",
+    fullDesc: "Eliminate data silos with custom high-speed API middleware, legacy software synchronization, and secure webhook integrations.",
+    features: [
+      "Custom REST & GraphQL Middleware",
+      "ERP, CRM & Point-of-Sale (POS) Integrations",
+      "Role-Based Access Control (RBAC) & OAuth2 Security",
+      "Third-Party Payment & Hardware SDK Sync"
+    ],
+    techStack: ["FastAPI", "Node.js", "OAuth2", "GraphQL", "PostgreSQL"]
+  }
+];
+
+export const caseStudiesData = [
   {
     id: "bar-club-os",
-    title: "Bar & Club Management OS (Featured Solution)",
-    icon: "Beer",
-    shortDesc: "Specialized management software for nightclub gate entry verification, stock receipts, and sales tallying.",
-    fullDesc: "Our dedicated hospitality management platform handles VIP gate entry verification, photo ID logs, beverage stock receipt tracking, POS sales item tallying, and staff payroll.",
-    features: [
-      "Customer Entry Verification & Photo ID Tracking",
-      "Beverage Stock Receipts & Bottle/Peg Inventory Sync",
-      "Point of Sale (POS) & Daily Sales Tallying",
-      "Employee Attendance & Salary Advance Management"
-    ],
-    techStack: ["React", "FastAPI", "Python", "PostgreSQL", "Alembic"]
+    title: "Bar & Club Operating System (Bar OS™)",
+    clientCategory: "Hospitality & Nightlife Enterprise",
+    badge: "Featured System",
+    problem: "Nightclubs and high-volume bars suffer from stock inventory leakage, unverified VIP gate entry, and manual end-of-day peg/bottle sales reconciliation.",
+    solution: "Engineered an integrated venue OS featuring VIP photo entry verification, real-time beverage stock receipt tracking, and automated POS closing sales peg/bottle tallying.",
+    technologies: ["React", "FastAPI", "Python", "OpenCV / Face AI", "PostgreSQL"],
+    result: "99.8% inventory accuracy & zero unauthorized entry",
+    highlights: [
+      "VIP Photo Entry Verification",
+      "Peg & Bottle Stock Telemetry",
+      "Daily POS Sales Tallying",
+      "Staff Attendance & Advance Log"
+    ]
   },
   {
-    id: "enterprise-integration",
-    title: "Enterprise System & API Integration",
-    icon: "Layers",
-    shortDesc: "Unify fragmented ERP, CRM, inventory, and payment systems into a single seamless hub.",
-    fullDesc: "Eliminate manual data silos with high-speed API middleware, legacy system synchronization, and secure webhooks.",
-    features: [
-      "Custom REST & GraphQL Middleware Development",
-      "ERP, CRM & Inventory Synchronization",
-      "Automated Webhooks & Event Message Queues",
-      "Third-Party Payment & POS Gateway Connections"
-    ],
-    techStack: ["FastAPI", "Node.js", "PostgreSQL", "GraphQL", "Redis"]
+    id: "gold-jewellery-os",
+    title: "Gold & Jewellery Management System (Gold OS™)",
+    clientCategory: "Jewellery Retail & Bullion Enterprise",
+    badge: "Production System",
+    problem: "Jewellery retailers struggle with complex karat/gram weight calculations, manual daily gold market rate updates, GST bill audits, and customer old-gold exchange tracking.",
+    solution: "Developed a specialized retail management platform with automated live bullion rate sync, RFID tag barcode scanning, instant karat purity calculation, and GST invoice generation.",
+    technologies: ["React", "Node.js", "Python", "PostgreSQL", "Thermal Print SDK"],
+    result: "75% faster checkout billing & 100% audit accuracy",
+    highlights: [
+      "Live Bullion Rate Sync",
+      "Karat & Gram Auto-Calculation",
+      "RFID Barcode Billing",
+      "GST Compliant Invoice Engine"
+    ]
   },
   {
-    id: "cybersecurity-shield",
-    title: "Cybersecurity & Access Governance",
-    icon: "ShieldCheck",
-    shortDesc: "Protect enterprise digital assets with role-based access controls and immutable audit logging.",
-    fullDesc: "Ensure strict security compliance with role-based access control (RBAC), end-to-end data encryption, and automated user action audit logging.",
-    features: [
-      "Role-Based Access Control (RBAC)",
-      "OAuth2 & JWT Token Authentication",
-      "Encrypted Data Storage & Safe Transmission",
-      "Immutable Audit Logs & Activity History"
-    ],
-    techStack: ["OAuth2", "JWT", "Bcrypt", "PostgreSQL"]
-  }
-];
-
-export const productsData = [
-  {
-    id: "harvid-cloud-studio",
-    name: "HARVID Cloud Studio™",
-    tagline: "Custom Enterprise Web & SaaS Platform Engine",
-    desc: "A modular web application foundation engineered for fast deployment of business SaaS platforms, portals, and admin dashboards.",
-    badge: "Enterprise SaaS",
-    metrics: "Accelerates web application deployment velocity",
-    color: "from-sky-500 to-blue-600"
-  },
-  {
-    id: "harvid-club-os",
-    name: "HARVID Bar & Club OS™",
-    tagline: "Specialized Bar & Nightclub Management Software",
-    desc: "Complete operational suite for hospitality venues featuring VIP entry logs, beverage stock tallying, POS sales tracking, and staff attendance.",
-    badge: "Featured Industry Solution",
-    metrics: "Handles customer entry, bottle inventory & sales tallying",
-    color: "from-indigo-500 to-purple-600"
-  },
-  {
-    id: "harvid-intelligence",
-    name: "HARVID Intelligence AI™",
-    tagline: "Predictive Analytics & Executive Command Hub",
-    desc: "Real-time business intelligence dashboard giving executive visibility, revenue forecasting, and automated operational alerts.",
+    id: "ai-automation-hub",
+    title: "Enterprise AI Business Automation Engine",
+    clientCategory: "Cloud SaaS & Corporate Operations",
     badge: "AI Platform",
-    metrics: "Sub-20ms query response on enterprise datasets",
-    color: "from-emerald-500 to-teal-600"
+    problem: "Corporate operations teams waste hundreds of manual hours extracting data from physical documents, routing customer requests, and compiling multi-department reports.",
+    solution: "Created a multi-tenant AI automation hub featuring automated document OCR extraction, intelligent inquiry routing, and predictive executive reporting dashboards.",
+    technologies: ["Python", "PyTorch / LLM", "FastAPI", "Docker", "PostgreSQL"],
+    result: "10x faster document processing & 40% labor reduction",
+    highlights: [
+      "Automated Document Data OCR",
+      "Predictive Revenue Forecasting",
+      "Automated Workflow Triggers",
+      "Sub-20ms Analytics Endpoints"
+    ]
   }
 ];
 
-export const coreModulesData = [
+export const whyHarvidData = [
   {
-    title: "Custom SaaS & Enterprise Web Applications",
-    category: "Cloud Software",
-    summary: "Engineering scalable web platforms with responsive React interfaces and high-speed API backends.",
-    result: "High-performance business software custom-built to your workflow."
+    title: "Direct Founder Engineering",
+    desc: "Speak and collaborate directly with hands-on software founders and architects. No middle managers or lost requirements.",
+    icon: "UserCheck"
   },
   {
-    title: "Bar & Club Management Operating System",
-    category: "Hospitality Software",
-    summary: "Built complete platform managing customer entry photo verification, stock receipts, and POS sales tallying.",
-    result: "Automated gate verification and daily inventory reconciliation."
+    title: "Real Production Systems",
+    desc: "We don't just sell software concepts. We have real, battle-tested systems actively operating in hospitality, retail, and cloud SaaS.",
+    icon: "ShieldCheck"
   },
   {
-    title: "AI Business Intelligence & Predictive Analytics",
-    category: "Data & AI",
-    summary: "Developing custom data telemetry pipelines, automated financial reporting, and revenue analytics.",
-    result: "Real-time operational dashboards for executive visibility."
+    title: "Sub-20ms Speed & Cloud Scalability",
+    desc: "Built on high-performance FastAPI, React, and PostgreSQL. Engineered for sub-second page loads and zero-lag concurrency.",
+    icon: "Zap"
+  },
+  {
+    title: "100% Customized Automation",
+    desc: "Software built around your exact business workflow rather than forcing your business to fit into rigid off-the-shelf templates.",
+    icon: "Sliders"
   }
 ];
