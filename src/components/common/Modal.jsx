@@ -28,7 +28,7 @@ export default function Modal({ isOpen, onClose, onShowToast }) {
 
   return (
     <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4">
-      <div className="glass-panel p-6 sm:p-8 rounded-3xl border max-w-xl w-full relative space-y-6 shadow-2xl animate-in fade-in zoom-in duration-200">
+      <div className="glass-panel p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 max-w-xl w-full max-h-[90vh] overflow-y-auto relative space-y-6 shadow-2xl animate-in fade-in zoom-in duration-200">
         
         {/* Close Button */}
         <button
