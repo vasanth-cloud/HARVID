@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harvid-website.onrender.com/sitemap.xml
