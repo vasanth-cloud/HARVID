@@ -22,7 +22,7 @@ export default function AboutUs() {
             Engineering Excellence & Strategic Growth
           </h2>
           <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            HARVID was founded with a single mission: to build intelligent, high-speed software solutions that solve real business problems.
+            HARVID(India) was founded with a single mission: to build intelligent, high-speed software solutions that solve real business problems.
           </p>
         </div>
 

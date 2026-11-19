@@ -1,10 +1,11 @@
 export const companyDetails = {
-  name: "HARVID",
-  fullName: "HARVID Tech & Software Solutions",
-  logo: "/harvid-emblem-clean.png",
-  positioning: "HARVID — Building AI-Powered Software Solutions for Modern Businesses.",
+  name: "HARVID(India)",
+  brandName: "HARVID(India)",
+  fullName: "HARVID(India) Tech & Software Solutions",
+  logo: "/favicon-512x512.png",
+  positioning: "HARVID(India) — Building AI-Powered Software Solutions for Modern Businesses.",
   tagline: "Building AI-Powered Software Solutions for Modern Businesses",
-  description: "HARVID turns complex business challenges into fast, intelligent software. From custom SaaS web apps and AI automation to specialized systems like Bar OS and Jewellery ERP, we build software engineered for speed and revenue growth.",
+  description: "HARVID(India) turns complex business challenges into fast, intelligent software. From custom SaaS web apps and AI automation to specialized systems like Bar OS and Jewellery ERP, we build software engineered for speed and revenue growth.",
   establishedYear: 2026,
   status: "Active Software Studio",
   contact: {

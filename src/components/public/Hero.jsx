@@ -25,7 +25,7 @@ export default function Hero({ onOpenQuoteModal, setActiveSection }) {
         {/* Startup Tag Badge */}
         <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-xs font-semibold text-red-600 dark:text-red-400 shadow-sm">
           <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-          <span>HARVID • AI-Powered Software Solutions for Businesses</span>
+          <span>HARVID(India) • AI-Powered Software Solutions for Businesses</span>
           <ChevronRight className="w-3.5 h-3.5" />
         </div>
 
@@ -39,7 +39,7 @@ export default function Hero({ onOpenQuoteModal, setActiveSection }) {
           </h1>
 
           <p className="text-base sm:text-xl lg:text-2xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto font-normal leading-relaxed">
-            From custom SaaS web platforms and AI automation engines to specialized industry systems like Bar OS and Jewellery ERP, HARVID turns complex business challenges into fast, high-revenue software.
+            From custom SaaS web platforms and AI automation engines to specialized industry systems like Bar OS and Jewellery ERP, HARVID(India) turns complex business challenges into fast, high-revenue software.
           </p>
         </div>
 

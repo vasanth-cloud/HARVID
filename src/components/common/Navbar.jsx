@@ -50,9 +50,14 @@ export default function Navbar({ activeSection, setActiveSection, onOpenQuoteMod
             </div>
 
             {/* Vector-Sharp Brand Font Text */}
-            <span className="text-2xl sm:text-3xl font-extrabold tracking-[0.12em] text-slate-900 dark:text-white uppercase font-sans">
-              HARVID
-            </span>
+            <div className="flex items-baseline">
+              <span className="text-2xl sm:text-3xl font-extrabold tracking-[0.06em] text-slate-900 dark:text-white uppercase font-sans">
+                HARVID
+              </span>
+              <span className="text-xs sm:text-sm font-bold tracking-normal text-red-600 dark:text-red-500 ml-1">
+                (India)
+              </span>
+            </div>
           </div>
 
           {/* Desktop Navigation Links */}

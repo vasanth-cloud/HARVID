@@ -54,9 +54,14 @@ export default function Footer({ setActiveSection }) {
               </div>
 
               {/* Vector Brand Font Text */}
-              <span className="text-2xl font-extrabold tracking-[0.12em] text-slate-900 dark:text-white uppercase font-sans">
-                HARVID
-              </span>
+              <div className="flex items-baseline">
+                <span className="text-2xl font-extrabold tracking-[0.06em] text-slate-900 dark:text-white uppercase font-sans">
+                  HARVID
+                </span>
+                <span className="text-xs font-bold tracking-normal text-red-600 dark:text-red-500 ml-1">
+                  (India)
+                </span>
+              </div>
             </div>
             <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed max-w-sm">
               {companyDetails.description}
@@ -136,7 +141,7 @@ export default function Footer({ setActiveSection }) {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
-          <p>© {new Date().getFullYear()} HARVID Tech & Software Solutions. Founded by A. Vasanth & T. S. Padmesh.</p>
+          <p>© {new Date().getFullYear()} HARVID(India) Tech & Software Solutions. Founded by A. Vasanth & T. S. Padmesh.</p>
           <div className="flex items-center space-x-6">
             <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors">Terms of Service</a>
